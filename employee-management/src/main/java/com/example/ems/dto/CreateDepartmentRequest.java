@@ -21,6 +21,5 @@ public class CreateDepartmentRequest {
     @NotNull
     private LocalDate creationDate;
 
-    // optional at create; must reference existing employee id if provided
     private Long departmentHeadId;
 }

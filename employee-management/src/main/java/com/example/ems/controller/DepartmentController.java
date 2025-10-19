@@ -39,8 +39,7 @@ public class DepartmentController {
     public ResponseEntity<?> list(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(required = false) Integer size,
-            @RequestParam(required = false) String expand // "employee" means expand
-    ) {
+            @RequestParam(required = false) String expand) {
         boolean expandEmployees = "employee".equalsIgnoreCase(expand);
         int s = (size == null) ? -1 : size;
         Map<String, Object> res = departmentService.listDepartments(page, s, expandEmployees);

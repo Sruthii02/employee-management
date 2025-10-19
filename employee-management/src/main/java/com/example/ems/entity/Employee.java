@@ -30,11 +30,9 @@ public class Employee {
     private LocalDate joiningDate;
     private Double yearlyBonus;
 
-    // Department reference by ID only
     @Column(name = "department_id")
     private Long departmentId;
 
-    // Reporting manager reference by ID only
     @Column(name = "reporting_manager_id")
     private Long reportingManagerId;
 
