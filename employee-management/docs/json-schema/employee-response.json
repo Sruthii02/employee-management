@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EmployeeResponse",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "dateOfBirth": { "type": "string", "format": "date" },
+    "salary": { "type": "number" },
+    "address": { "type": "string" },
+    "role": { "type": "string" },
+    "joiningDate": { "type": "string", "format": "date" },
+    "yearlyBonus": { "type": "number" },
+    "departmentId": { "type": "integer" },
+    "departmentName": { "type": "string" },
+    "reportingManager": {
+      "type": ["object", "null"],
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" }
+      }
+    }
+  }
+}

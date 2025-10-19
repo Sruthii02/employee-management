@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreateDepartmentRequest",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "creationDate": { "type": "string", "format": "date" },
+    "departmentHeadId": { "type": ["integer", "null"] }
+  },
+  "required": ["name"]
+}

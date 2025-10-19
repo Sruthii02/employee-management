@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DepartmentResponse",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "creationDate": { "type": "string", "format": "date" },
+    "departmentHead": {
+      "type": ["object", "null"],
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" }
+      }
+    },
+    "employees": {
+      "type": "array",
+      "items": { "$ref": "employee-response.json" }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreateEmployeeRequest",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "dateOfBirth": { "type": "string", "format": "date" },
+    "salary": { "type": "number" },
+    "address": { "type": "string" },
+    "role": { "type": "string" },
+    "joiningDate": { "type": "string", "format": "date" },
+    "yearlyBonus": { "type": "number" },
+    "departmentId": { "type": "integer" },
+    "reportingManagerId": { "type": ["integer", "null"] }
+  },
+  "required": ["name", "departmentId"]
+}
